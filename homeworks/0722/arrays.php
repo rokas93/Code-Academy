@@ -175,51 +175,28 @@ print_r(oddArrayValues($array));
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $literatureData = ['title', 'author', 'year', 'genre'];
 
+var_dump($literatureData);
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Sukurti masyvą, kurio elementai būtų masyvai aprašantys knygas
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$literatureData = array_flip($literatureData);
 
-$literature = [
-    'title' => [
-        'Promised Land',
-        'In Search of Lost Time',
-        'Ulysses',
-        'Don Quixote',
-        'The Great Gatsby'
-    ],
-    'author' => [
-        'Barack Obama',
-        'Marcel Proust',
-        'James Joyce',
-        'Miguel de Cervantes',
-        'F. Scott Fitzgerald'
-    ],
-    'year' => [
-        '2020',
-        '1913',
-        '1920',
-        '1605',
-        '2013'
-    ],
-    'genre' => [
-        'Biography',
-        'Philosophical fiction',
-        'Novel',
-        'Novel',
-        'Tragedy'
-    ]
-];
+$literatureData['title'] = ['Promised Land', 'In Search of Lost Time', 'Ulysses', 'Don Quixote', 'The Great Gatsby'];
+$literatureData['author'] = ['Barack Obama', 'Marcel Proust', 'James Joyce', 'Miguel de Cervantes', 'F. Scott Fitzgerald'];
+$literatureData['year'] = ['2020', '1913', '1920', '1605', '2013'];
+$literatureData['genre'] = ['Biography', 'Philosophical fiction', 'Novel', 'Novel', 'Tragedy'];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Išvesti visus knygų masyvo elementus su var_dump;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-var_dump($literature);
+var_dump($literatureData);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Išvesti visus knygų masyvo elementus lentele;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 echo "<table style='border: 1px solid black'>";
-foreach($literature as $key => $row) {
+foreach($literatureData as $key => $row) {
     echo "<tr>" . "<th style='border: 1px solid black'>" . $key . "</th>";
     foreach($row as $key2 => $row2){
         echo "<td style='border: 1px solid black'>" . $row2 . "</td>";
@@ -231,7 +208,7 @@ echo "</table>";
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Išvesti visų visų knygų metų vidurkį;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$average = array_sum($literature['year'])/count($literature['year']);
+$average = array_sum($literatureData['year'])/count($literatureData['year']);
 
 var_dump($average);
 
