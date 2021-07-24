@@ -52,7 +52,7 @@ $url = "http://$_SERVER[HTTP_HOST]/homeworks/0726/forms/registration.php"
 </head>
 <body>
     <hr>
-    <form method="post" action="<?php echo $url;?>" enctype="multipart/form-data">
+    <form method="POST" action="<?php echo $url;?>" enctype="multipart/form-data">
 
         <label for="username">Vardas:</label>
         <span class="need">*</span>
