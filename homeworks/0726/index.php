@@ -99,28 +99,28 @@ $car = [
         'generations'            => 1,
         'year'                   => 2018,
         'style'                  => 'Coupé'
-	],
+    ],
     [
         'manufacturer'           => 'CHEVROLET',
         'model'                  => 'Camaro',
         'generations'            => 22,
         'year'                   => 1967,
         'style'                  => 'Coupé'
-	],
+    ],
     [
         'manufacturer'           => 'FERRARI',
         'model'                  => 'F8',
         'generations'            => 2,
         'year'                   => 2019,
         'style'                  => 'Coupé'
-	],
+    ],
     [
         'manufacturer'           => 'MCLAREN',
         'model'                  => '570S',
         'generations'            => 1,
         'year'                   => 2016,
         'style'                  => 'Coupé'
-	]
+    ]
 ];
 
 var_dump($car);
