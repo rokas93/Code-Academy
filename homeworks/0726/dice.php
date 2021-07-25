@@ -46,16 +46,13 @@ function dice($diceLevel)
                 $playerLose = true;
                 return 'Pralaimėjote!';
 
-            } elseif ($sumDiceValues >= 5) {
+            } elseif ($firstDiceValue == 6 && $secondDiceValue == 6) {
+                $playerWin = true;
+                return 'Sveikiname, laimėjote dviratį!';
 
-                if ($firstDiceValue == 6 && $secondDiceValue == 6) {
-                    $playerWin = true;
-                    return 'Sveikiname, laimėjote dviratį!';
-
-                } elseif ($firstDiceValue == $secondDiceValue && $firstDiceValue !== 6) {
-                    $playerWin = true;
-                    return 'Laimėjote bilietą į kiną!';
-                }
+            } elseif ($sumDiceValues > 5 && $firstDiceValue == $secondDiceValue && $firstDiceValue !== 6) {
+                $playerWin = true;
+                return 'Laimėjote bilietą į kiną!';
             }
         }
     }
