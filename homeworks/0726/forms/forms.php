@@ -13,11 +13,11 @@
     <form>
         <label for="number1">Pirmas skaičius:</label>
         <br>
-        <input type="text" name="number1">
+        <input type="number" name="number1">
         <br><br>
         <label for="number2">Antras skaičius:</label>
         <br>
-        <input type="text" name="number2">
+        <input type="number" name="number2">
         <br><br>
         <button type="submit">Skaičiuoti</button>
         <br><br>
@@ -28,9 +28,9 @@
         $number1 = $_GET['number1'];
         $number2 = $_GET['number2'];
 
-        $result = $number1 + $number2;
+        $result = $number1 * $number2;
 
-        echo "$number1 + $number2 = <strong>$result</strong><br><br>";
+        echo "{$number1} * {$number2} = <strong>{$result}</strong><br><br>";
     }
     ?>
 
