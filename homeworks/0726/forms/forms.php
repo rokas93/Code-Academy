@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .need {color: #FF0000;}
+    </style>
 </head>
 <body>
     <form>
@@ -19,38 +22,25 @@
         <button type="submit">Skaičiuoti</button>
         <br><br>
     </form>
-</body>
-</html>
 
-<?php
-if (isset($_GET['number1']) && isset($_GET['number2']) && !empty($_GET['number1']) && !empty($_GET['number2'])) {
-    $number1 = $_GET['number1'];
-    $number2 = $_GET['number2'];
+    <?php
+    if (isset($_GET['number1']) && isset($_GET['number2']) && !empty($_GET['number1']) && !empty($_GET['number2'])) {
+        $number1 = $_GET['number1'];
+        $number2 = $_GET['number2'];
 
-    $result = $number1 + $number2;
+        $result = $number1 + $number2;
 
-    echo "$number1 + $number2 = <strong>$result</strong><br><br>";
-}
-?>
+        echo "$number1 + $number2 = <strong>$result</strong><br><br>";
+    }
+    ?>
 
-<!-- Sukurkite POST registracijos formą su pakartotiniu slaptažodžiu ir būtinais duomenimis. -->
-<!-- Registracijos duomenis išsiųskite į kitą registracija.php failą ir juos atvaizduokite. -->
+    <!-- Sukurkite POST registracijos formą su pakartotiniu slaptažodžiu ir būtinais duomenimis. -->
+    <!-- Registracijos duomenis išsiųskite į kitą registracija.php failą ir juos atvaizduokite. -->
 
-<?php 
-$url = "http://$_SERVER[HTTP_HOST]/homeworks/0726/forms/registration.php"
-?>
+    <?php 
+    $url = "http://$_SERVER[HTTP_HOST]/homeworks/0726/forms/registration.php"
+    ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .need {color: #FF0000;}
-    </style>
-</head>
-<body>
     <hr>
     <form method="POST" action="<?php echo $url;?>" enctype="multipart/form-data">
 
