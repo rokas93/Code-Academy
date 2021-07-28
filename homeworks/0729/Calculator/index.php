@@ -20,14 +20,6 @@ Atnaujinus(refreshin‘us) naršyklės langą, atsakymai išlieka.
         margin: auto;
         }
 
-        .form-calculator .checkbox {
-        font-weight: 400;
-        }
-
-        .form-calculator .form-floating:focus-within {
-        z-index: 2;
-        }
-
         .form-calculator input[name="number-1"] {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
@@ -44,7 +36,6 @@ Atnaujinus(refreshin‘us) naršyklės langą, atsakymai išlieka.
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         }
-    
     </style>
 </head>
 <body>
