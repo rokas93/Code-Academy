@@ -57,7 +57,7 @@ Atnaujinus(refreshin‘us) naršyklės langą, atsakymai išlieka.
                 <option value="divide">/</option>
                 <option value="square">^2</option>
             </select>
-            <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Skaičiuoti</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">=</button>
         </form>
     </main>
 </body>
