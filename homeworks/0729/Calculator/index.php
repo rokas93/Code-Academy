@@ -17,7 +17,6 @@ Atnaujinus(refreshin‘us) naršyklės langą, atsakymai išlieka.
         width: 100%;
         max-width: 330px;
         padding: 15px;
-        margin: auto;
         }
 
         .form-calculator input[name="number-1"] {
